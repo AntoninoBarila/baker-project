@@ -1,0 +1,37 @@
+{
+  "info": {
+    "name": "Baker Trigger Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Trigger Recipe",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8085/baker/trigger",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8085",
+          "path": [
+            "baker",
+            "trigger"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"orderId\": \"12345\",\n  \"customerName\": \"Mario Rossi\"\n}"
+        }
+      },
+      "response": []
+    }
+  ]
+}

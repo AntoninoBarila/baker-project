@@ -1,0 +1,1531 @@
+Index: microservice-3/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-3/pom.xml b/microservice-3/pom.xml
+new file mode 100644
+--- /dev/null	(date 1745093822000)
++++ b/microservice-3/pom.xml	(date 1745093822000)
+@@ -0,0 +1,44 @@
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>com.example.baker</groupId>
++        <artifactId>baker-multi-module</artifactId>
++        <version>1.0.0-SNAPSHOT</version>
++    </parent>
++
++    <artifactId>microservice-3</artifactId>
++
++    <properties>
++        <java.version>17</java.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++        <dependency><groupId>com.example.baker</groupId><artifactId>shared</artifactId><version>1.0.0-SNAPSHOT</version></dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.11.0</version>
++                <configuration>
++                    <source>${java.version}</source>
++                    <target>${java.version}</target>
++                    <release>${java.version}</release>
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++        </plugins>
++    </build>
++</project>
+Index: baker-client/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-client/pom.xml b/baker-client/pom.xml
+new file mode 100644
+--- /dev/null	(date 1745093822000)
++++ b/baker-client/pom.xml	(date 1745093822000)
+@@ -0,0 +1,44 @@
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>com.example.baker</groupId>
++        <artifactId>baker-multi-module</artifactId>
++        <version>1.0.0-SNAPSHOT</version>
++    </parent>
++
++    <artifactId>baker-client</artifactId>
++
++    <properties>
++        <java.version>17</java.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++        <dependency><groupId>com.example.baker</groupId><artifactId>shared</artifactId><version>1.0.0-SNAPSHOT</version></dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.11.0</version>
++                <configuration>
++                    <source>${java.version}</source>
++                    <target>${java.version}</target>
++                    <release>${java.version}</release>
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++        </plugins>
++    </build>
++</project>
+Index: microservice-1/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-1/pom.xml b/microservice-1/pom.xml
+new file mode 100644
+--- /dev/null	(date 1745093822000)
++++ b/microservice-1/pom.xml	(date 1745093822000)
+@@ -0,0 +1,44 @@
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>com.example.baker</groupId>
++        <artifactId>baker-multi-module</artifactId>
++        <version>1.0.0-SNAPSHOT</version>
++    </parent>
++
++    <artifactId>microservice-1</artifactId>
++
++    <properties>
++        <java.version>17</java.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++        <dependency><groupId>com.example.baker</groupId><artifactId>shared</artifactId><version>1.0.0-SNAPSHOT</version></dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.11.0</version>
++                <configuration>
++                    <source>${java.version}</source>
++                    <target>${java.version}</target>
++                    <release>${java.version}</release>
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++        </plugins>
++    </build>
++</project>
+Index: microservice-2/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-2/pom.xml b/microservice-2/pom.xml
+new file mode 100644
+--- /dev/null	(date 1745093822000)
++++ b/microservice-2/pom.xml	(date 1745093822000)
+@@ -0,0 +1,44 @@
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>com.example.baker</groupId>
++        <artifactId>baker-multi-module</artifactId>
++        <version>1.0.0-SNAPSHOT</version>
++    </parent>
++
++    <artifactId>microservice-2</artifactId>
++
++    <properties>
++        <java.version>17</java.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++        <dependency><groupId>com.example.baker</groupId><artifactId>shared</artifactId><version>1.0.0-SNAPSHOT</version></dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.11.0</version>
++                <configuration>
++                    <source>${java.version}</source>
++                    <target>${java.version}</target>
++                    <release>${java.version}</release>
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++        </plugins>
++    </build>
++</project>
+Index: shared/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/shared/pom.xml b/shared/pom.xml
+new file mode 100644
+--- /dev/null	(date 1745093822000)
++++ b/shared/pom.xml	(date 1745093822000)
+@@ -0,0 +1,44 @@
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>com.example.baker</groupId>
++        <artifactId>baker-multi-module</artifactId>
++        <version>1.0.0-SNAPSHOT</version>
++    </parent>
++
++    <artifactId>shared</artifactId>
++
++    <properties>
++        <java.version>17</java.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++        
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.11.0</version>
++                <configuration>
++                    <source>${java.version}</source>
++                    <target>${java.version}</target>
++                    <release>${java.version}</release>
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++        </plugins>
++    </build>
++</project>
+Index: baker-server/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/pom.xml b/baker-server/pom.xml
+new file mode 100644
+--- /dev/null	(date 1745094296000)
++++ b/baker-server/pom.xml	(date 1745094296000)
+@@ -0,0 +1,63 @@
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>com.example.baker</groupId>
++        <artifactId>baker-multi-module</artifactId>
++        <version>1.0.0-SNAPSHOT</version>
++    </parent>
++
++    <artifactId>baker-server</artifactId>
++
++    <properties>
++        <java.version>17</java.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++        <dependency>
++            <groupId>com.example.baker</groupId>
++            <artifactId>shared</artifactId>
++            <version>1.0.0-SNAPSHOT</version>
++        </dependency>
++        <dependency>
++            <groupId>com.ing.baker</groupId>
++            <artifactId>baker-runtime_2.13</artifactId>
++            <version>4.1.0</version>
++        </dependency>
++        <dependency>
++            <groupId>com.ing.baker</groupId>
++            <artifactId>baker-recipe-dsl_2.13</artifactId>
++            <version>4.1.0</version>
++        </dependency>
++        <dependency>
++            <groupId>com.ing.baker</groupId>
++            <artifactId>baker-types_2.13</artifactId>
++            <version>4.1.0</version>
++        </dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.11.0</version>
++                <configuration>
++                    <source>${java.version}</source>
++                    <target>${java.version}</target>
++                    <release>${java.version}</release>
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++        </plugins>
++    </build>
++</project>
+Index: stop-all.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/stop-all.sh b/stop-all.sh
+new file mode 100755
+--- /dev/null	(date 1745089882000)
++++ b/stop-all.sh	(date 1745089882000)
+@@ -0,0 +1,10 @@
++#!/bin/bash
++echo '🛑 Terminazione di tutti i processi Spring Boot...'
++
++PIDS=$(ps aux | grep '[m]vn spring-boot:run' | awk '{print $2}')
++if [ -z "$PIDS" ]; then
++  echo 'Nessun processo spring-boot:run trovato.'
++else
++  echo "Terminazione PID: $PIDS"
++  kill -9 $PIDS
++fi
+Index: build.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.bat b/build.bat
+new file mode 100644
+--- /dev/null	(date 1745090046000)
++++ b/build.bat	(date 1745090046000)
+@@ -0,0 +1,10 @@
++@echo off
++echo 📦 Building Maven project...
++call mvn clean package -DskipTests
++echo 🐳 Building Docker images...
++docker build -t baker-server baker-server
++docker build -t baker-client baker-client
++docker build -t microservice-1 microservice-1
++docker build -t microservice-2 microservice-2
++docker build -t microservice-3 microservice-3
++echo ✅ Build completed.
+Index: docker-compose.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/docker-compose.yml b/docker-compose.yml
+new file mode 100644
+--- /dev/null	(date 1745095700000)
++++ b/docker-compose.yml	(date 1745095700000)
+@@ -0,0 +1,22 @@
++version: '3.8'
++services:
++  baker-server:
++    build: ./baker-server
++    ports:
++      - "8080:8080"
++  baker-client:
++    build: ./baker-client
++    ports:
++      - "8085:8085"
++  microservice-1:
++    build: ./microservice-1
++    ports:
++      - "8091:8091"
++  microservice-2:
++    build: ./microservice-2
++    ports:
++      - "8092:8092"
++  microservice-3:
++    build: ./microservice-3
++    ports:
++      - "8093:8093"
+Index: build.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.sh b/build.sh
+new file mode 100755
+--- /dev/null	(date 1745089468000)
++++ b/build.sh	(date 1745089468000)
+@@ -0,0 +1,14 @@
++#!/bin/bash
++set -e
++
++echo "📦 Build dei moduli Maven..."
++mvn clean package -DskipTests
++
++echo "🐳 Build delle immagini Docker..."
++docker build -t baker-server ./baker-server
++docker build -t baker-client ./baker-client
++docker build -t microservice-1 ./microservice-1
++docker build -t microservice-2 ./microservice-2
++docker build -t microservice-3 ./microservice-3
++
++echo "✅ Tutto buildato con successo."
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+new file mode 100644
+--- /dev/null	(date 1745095812000)
++++ b/README.md	(date 1745095812000)
+@@ -0,0 +1,64 @@
++# Baker Project – Microservizi + Akka + Spring Boot
++
++## ✅ Descrizione
++Questo progetto implementa una architettura a microservizi orchestrata con Baker 4.1.0 (Akka + JVM), integrata con Spring Boot.  
++Comprende:
++- `baker-server`: ospita e registra la recipe
++- `baker-client`: invia eventi per innescare la recipe
++- `shared`: contiene gli eventi condivisi
++- `microservice-1`, `2`, `3`: contengono le interaction della recipe
++
++---
++
++## 🏁 Avvio con Maven (Mac/Linux)
++```bash
++chmod +x run.sh
++./run.sh
++```
++
++## 🐳 Avvio con Docker Compose
++```bash
++docker compose build
++docker compose up
++```
++
++---
++
++## 🎯 Trigger della Recipe
++Puoi inviare un evento `OrderReceivedEvent` per iniziare la recipe via:
++
++### 🟢 Postman
++Importa il file:
++```
++baker-client.postman_collection.json
++```
++
++Esegui la request:
++```
++POST http://localhost:8085/baker/trigger
++{
++  "orderId": "12345",
++  "customerName": "Mario Rossi"
++}
++```
++
++---
++
++## 🔧 Build manuale
++```bash
++./mvnw clean install
++```
++
++---
++
++## 📦 Struttura del progetto
++- `baker-server`: espone la REST API `/baker/trigger`, registra recipe e interazioni
++- `baker-client`: UI/REST che invia eventi a `baker-server`
++- `shared`: modelli evento comuni
++- `microservice-1`, `2`, `3`: contengono implementazioni delle `Interaction`
++
++---
++
++## 📁 Dockerfile + docker-compose
++Ogni modulo contiene un `Dockerfile`, già integrato nel `docker-compose.yml`.
++
+Index: .env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.env b/.env
+new file mode 100644
+--- /dev/null	(date 1745090072000)
++++ b/.env	(date 1745090072000)
+@@ -0,0 +1,5 @@
++SERVER_PORT=8080
++CLIENT_PORT=8084
++MS1_PORT=8081
++MS2_PORT=8082
++MS3_PORT=8083
+Index: mvnw.cmd
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mvnw.cmd b/mvnw.cmd
+new file mode 100644
+--- /dev/null	(date 1745093730000)
++++ b/mvnw.cmd	(date 1745093730000)
+@@ -0,0 +1,2 @@
++@echo off
++mvn %*
+\ No newline at end of file
+Index: stop-all.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/stop-all.bat b/stop-all.bat
+new file mode 100644
+--- /dev/null	(date 1745090046000)
++++ b/stop-all.bat	(date 1745090046000)
+@@ -0,0 +1,5 @@
++@echo off
++echo 🛑 Stopping all running Spring Boot modules...
++for /f "tokens=2" %%a in ('tasklist ^| findstr /i "java.exe"') do (
++  taskkill /PID %%a /F
++)
+Index: start.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/start.sh b/start.sh
+new file mode 100755
+--- /dev/null	(date 1745089496000)
++++ b/start.sh	(date 1745089496000)
+@@ -0,0 +1,3 @@
++#!/bin/bash
++echo "▶️ Avvio di tutti i container Docker..."
++docker-compose up --build
+Index: start-all-springboot.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/start-all-springboot.sh b/start-all-springboot.sh
+new file mode 100755
+--- /dev/null	(date 1745091060000)
++++ b/start-all-springboot.sh	(date 1745091060000)
+@@ -0,0 +1,12 @@
++#!/bin/bash
++
++echo "🔄 Costruzione progetto..."
++mvn clean install -DskipTests
++
++echo "🚀 Avvio dei moduli Spring Boot (ordine corretto)..."
++
++open -a Terminal "$(pwd)/microservice-1/start-micro1.sh"
++open -a Terminal "$(pwd)/microservice-2/start-micro2.sh"
++open -a Terminal "$(pwd)/microservice-3/start-micro3.sh"
++open -a Terminal "$(pwd)/baker-server/start-server.sh"
++open -a Terminal "$(pwd)/baker-client/start-client.sh"
+Index: start.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/start.bat b/start.bat
+new file mode 100644
+--- /dev/null	(date 1745090046000)
++++ b/start.bat	(date 1745090046000)
+@@ -0,0 +1,3 @@
++@echo off
++echo ▶️ Starting Docker containers...
++docker-compose up --build
+Index: microservice-3/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-3/src/main/resources/application.yml b/microservice-3/src/main/resources/application.yml
+new file mode 100644
+--- /dev/null	(date 1745089000000)
++++ b/microservice-3/src/main/resources/application.yml	(date 1745089000000)
+@@ -0,0 +1,5 @@
++server:
++  port: 8083
++spring:
++  application:
++    name: microservice-3
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+--- /dev/null	(date 1745088352000)
++++ b/pom.xml	(date 1745088352000)
+@@ -0,0 +1,48 @@
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.example.baker</groupId>
++    <artifactId>baker-multi-module</artifactId>
++    <version>1.0.0-SNAPSHOT</version>
++    <packaging>pom</packaging>
++
++    <modules>
++        <module>shared</module>
++        <module>baker-server</module>
++        <module>microservice-1</module>
++        <module>microservice-2</module>
++        <module>microservice-3</module>
++        <module>baker-client</module>
++    </modules>
++
++    <properties>
++        <java.version>17</java.version>
++        <spring.boot.version>3.2.4</spring.boot.version>
++        <baker.version>4.1.0</baker.version>
++    </properties>
++
++    <dependencyManagement>
++        <dependencies>
++            <dependency>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-dependencies</artifactId>
++                <version>${spring.boot.version}</version>
++                <type>pom</type>
++                <scope>import</scope>
++            </dependency>
++        </dependencies>
++    </dependencyManagement>
++
++    <build>
++        <pluginManagement>
++            <plugins>
++                <plugin>
++                    <groupId>org.springframework.boot</groupId>
++                    <artifactId>spring-boot-maven-plugin</artifactId>
++                </plugin>
++            </plugins>
++        </pluginManagement>
++    </build>
++</project>
+Index: clean.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/clean.bat b/clean.bat
+new file mode 100644
+--- /dev/null	(date 1745090046000)
++++ b/clean.bat	(date 1745090046000)
+@@ -0,0 +1,4 @@
++@echo off
++echo 🧹 Cleaning up Docker containers and images...
++docker-compose down
++docker rmi -f baker-server baker-client microservice-1 microservice-2 microservice-3
+Index: microservice-3/src/main/java/com/example/microservice3/Microservice3Application.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-3/src/main/java/com/example/microservice3/Microservice3Application.java b/microservice-3/src/main/java/com/example/microservice3/Microservice3Application.java
+new file mode 100644
+--- /dev/null	(date 1745088622000)
++++ b/microservice-3/src/main/java/com/example/microservice3/Microservice3Application.java	(date 1745088622000)
+@@ -0,0 +1,11 @@
++package com.example.microservice3;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class Microservice3Application {
++    public static void main(String[] args) {
++        SpringApplication.run(Microservice3Application.class, args);
++    }
++}
+Index: microservice-3/src/main/java/com/example/microservice3/controller/EmailController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-3/src/main/java/com/example/microservice3/controller/EmailController.java b/microservice-3/src/main/java/com/example/microservice3/controller/EmailController.java
+new file mode 100644
+--- /dev/null	(date 1745090868000)
++++ b/microservice-3/src/main/java/com/example/microservice3/controller/EmailController.java	(date 1745090868000)
+@@ -0,0 +1,13 @@
++package com.example.microservice3.controller;
++
++import org.springframework.web.bind.annotation.*;
++
++@RestController
++@RequestMapping("/interaction")
++public class EmailController {
++
++    @PostMapping("/send-confirmation")
++    public String sendEmail(@RequestParam String orderId) {
++        return "Email inviata per ordine: " + orderId;
++    }
++}
+Index: clean.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/clean.sh b/clean.sh
+new file mode 100755
+--- /dev/null	(date 1745089496000)
++++ b/clean.sh	(date 1745089496000)
+@@ -0,0 +1,4 @@
++#!/bin/bash
++echo '🧹 Rimozione container e immagini Docker...'
++docker-compose down
++docker rmi -f baker-server baker-client microservice-1 microservice-2 microservice-3 || true
+Index: start-all.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/start-all.bat b/start-all.bat
+new file mode 100644
+--- /dev/null	(date 1745090046000)
++++ b/start-all.bat	(date 1745090046000)
+@@ -0,0 +1,7 @@
++@echo off
++echo 🚀 Starting all modules using spring-boot:run
++start cmd /k "cd microservice-1 && mvn spring-boot:run"
++start cmd /k "cd microservice-2 && mvn spring-boot:run"
++start cmd /k "cd microservice-3 && mvn spring-boot:run"
++start cmd /k "cd baker-server && mvn spring-boot:run"
++start cmd /k "cd baker-client && mvn spring-boot:run"
+Index: mvnw
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mvnw b/mvnw
+new file mode 100644
+--- /dev/null	(date 1745093730000)
++++ b/mvnw	(date 1745093730000)
+@@ -0,0 +1,2 @@
++#!/bin/sh
++exec mvn "$@"
+\ No newline at end of file
+Index: microservice-3/Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-3/Dockerfile b/microservice-3/Dockerfile
+new file mode 100644
+--- /dev/null	(date 1745095700000)
++++ b/microservice-3/Dockerfile	(date 1745095700000)
+@@ -0,0 +1,4 @@
++FROM eclipse-temurin:17-jdk
++WORKDIR /app
++COPY target/*.jar app.jar
++ENTRYPOINT ["java", "-jar", "app.jar"]
+Index: microservice-3/start-micro3.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-3/start-micro3.sh b/microservice-3/start-micro3.sh
+new file mode 100755
+--- /dev/null	(date 1745091060000)
++++ b/microservice-3/start-micro3.sh	(date 1745091060000)
+@@ -0,0 +1,3 @@
++#!/bin/bash
++cd "/mnt/data/baker-multi-module/microservice-3"
++mvn spring-boot:run
+Index: microservice-2/src/main/java/com/example/microservice2/controller/PaymentController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-2/src/main/java/com/example/microservice2/controller/PaymentController.java b/microservice-2/src/main/java/com/example/microservice2/controller/PaymentController.java
+new file mode 100644
+--- /dev/null	(date 1745090868000)
++++ b/microservice-2/src/main/java/com/example/microservice2/controller/PaymentController.java	(date 1745090868000)
+@@ -0,0 +1,14 @@
++package com.example.microservice2.controller;
++
++import com.example.shared.ingredients.OrderInfo;
++import org.springframework.web.bind.annotation.*;
++
++@RestController
++@RequestMapping("/interaction")
++public class PaymentController {
++
++    @PostMapping("/process-payment")
++    public String processPayment(@RequestBody OrderInfo order) {
++        return "Pagamento completato per " + order.getProduct();
++    }
++}
+Index: microservice-2/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-2/src/main/resources/application.yml b/microservice-2/src/main/resources/application.yml
+new file mode 100644
+--- /dev/null	(date 1745089000000)
++++ b/microservice-2/src/main/resources/application.yml	(date 1745089000000)
+@@ -0,0 +1,5 @@
++server:
++  port: 8082
++spring:
++  application:
++    name: microservice-2
+Index: microservice-2/src/main/java/com/example/microservice2/Microservice2Application.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-2/src/main/java/com/example/microservice2/Microservice2Application.java b/microservice-2/src/main/java/com/example/microservice2/Microservice2Application.java
+new file mode 100644
+--- /dev/null	(date 1745088622000)
++++ b/microservice-2/src/main/java/com/example/microservice2/Microservice2Application.java	(date 1745088622000)
+@@ -0,0 +1,11 @@
++package com.example.microservice2;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class Microservice2Application {
++    public static void main(String[] args) {
++        SpringApplication.run(Microservice2Application.class, args);
++    }
++}
+Index: microservice-2/Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-2/Dockerfile b/microservice-2/Dockerfile
+new file mode 100644
+--- /dev/null	(date 1745095700000)
++++ b/microservice-2/Dockerfile	(date 1745095700000)
+@@ -0,0 +1,4 @@
++FROM eclipse-temurin:17-jdk
++WORKDIR /app
++COPY target/*.jar app.jar
++ENTRYPOINT ["java", "-jar", "app.jar"]
+Index: microservice-2/start-micro2.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-2/start-micro2.sh b/microservice-2/start-micro2.sh
+new file mode 100755
+--- /dev/null	(date 1745091060000)
++++ b/microservice-2/start-micro2.sh	(date 1745091060000)
+@@ -0,0 +1,3 @@
++#!/bin/bash
++cd "/mnt/data/baker-multi-module/microservice-2"
++mvn spring-boot:run
+Index: microservice-1/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-1/src/main/resources/application.yml b/microservice-1/src/main/resources/application.yml
+new file mode 100644
+--- /dev/null	(date 1745089000000)
++++ b/microservice-1/src/main/resources/application.yml	(date 1745089000000)
+@@ -0,0 +1,5 @@
++server:
++  port: 8081
++spring:
++  application:
++    name: microservice-1
+Index: microservice-1/src/main/java/com/example/microservice1/Microservice1Application.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-1/src/main/java/com/example/microservice1/Microservice1Application.java b/microservice-1/src/main/java/com/example/microservice1/Microservice1Application.java
+new file mode 100644
+--- /dev/null	(date 1745088622000)
++++ b/microservice-1/src/main/java/com/example/microservice1/Microservice1Application.java	(date 1745088622000)
+@@ -0,0 +1,11 @@
++package com.example.microservice1;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class Microservice1Application {
++    public static void main(String[] args) {
++        SpringApplication.run(Microservice1Application.class, args);
++    }
++}
+Index: microservice-1/src/main/java/com/example/microservice1/controller/OrderVerificationController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-1/src/main/java/com/example/microservice1/controller/OrderVerificationController.java b/microservice-1/src/main/java/com/example/microservice1/controller/OrderVerificationController.java
+new file mode 100644
+--- /dev/null	(date 1745090868000)
++++ b/microservice-1/src/main/java/com/example/microservice1/controller/OrderVerificationController.java	(date 1745090868000)
+@@ -0,0 +1,14 @@
++package com.example.microservice1.controller;
++
++import com.example.shared.ingredients.OrderInfo;
++import org.springframework.web.bind.annotation.*;
++
++@RestController
++@RequestMapping("/interaction")
++public class OrderVerificationController {
++
++    @PostMapping("/verify-order")
++    public OrderInfo verifyOrder(@RequestBody String orderId) {
++        return new OrderInfo("Notebook", 1);
++    }
++}
+Index: microservice-1/start-micro1.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-1/start-micro1.sh b/microservice-1/start-micro1.sh
+new file mode 100755
+--- /dev/null	(date 1745091060000)
++++ b/microservice-1/start-micro1.sh	(date 1745091060000)
+@@ -0,0 +1,3 @@
++#!/bin/bash
++cd "/mnt/data/baker-multi-module/microservice-1"
++mvn spring-boot:run
+Index: microservice-1/Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/microservice-1/Dockerfile b/microservice-1/Dockerfile
+new file mode 100644
+--- /dev/null	(date 1745095700000)
++++ b/microservice-1/Dockerfile	(date 1745095700000)
+@@ -0,0 +1,4 @@
++FROM eclipse-temurin:17-jdk
++WORKDIR /app
++COPY target/*.jar app.jar
++ENTRYPOINT ["java", "-jar", "app.jar"]
+Index: baker-server/src/main/resources/static/order_processing_recipe.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/resources/static/order_processing_recipe.svg b/baker-server/src/main/resources/static/order_processing_recipe.svg
+new file mode 100644
+--- /dev/null	(date 1745091948000)
++++ b/baker-server/src/main/resources/static/order_processing_recipe.svg	(date 1745091948000)
+@@ -0,0 +1,58 @@
++<?xml version="1.0" encoding="UTF-8" standalone="no"?>
++<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
++ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
++<!-- Generated by graphviz version 2.43.0 (0)
++ -->
++<!-- Title: %3 Pages: 1 -->
++<svg width="695pt" height="98pt"
++ viewBox="0.00 0.00 695.48 98.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
++<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 94)">
++<title>%3</title>
++<polygon fill="white" stroke="transparent" points="-4,4 -4,-94 691.48,-94 691.48,4 -4,4"/>
++<!-- E1 -->
++<g id="node1" class="node">
++<title>E1</title>
++<ellipse fill="lightblue" stroke="black" cx="107.24" cy="-37" rx="107.48" ry="18"/>
++<text text-anchor="middle" x="107.24" y="-33.3" font-family="Times,serif" font-size="14.00">OrderReceivedEvent</text>
++</g>
++<!-- I1 -->
++<g id="node2" class="node">
++<title>I1</title>
++<polygon fill="lightyellow" stroke="black" points="427.98,-90 326.98,-90 326.98,-54 427.98,-54 427.98,-90"/>
++<text text-anchor="middle" x="377.48" y="-68.3" font-family="Times,serif" font-size="14.00">VerifyOrder</text>
++</g>
++<!-- E1&#45;&gt;I1 -->
++<g id="edge1" class="edge">
++<title>E1&#45;&gt;I1</title>
++<path fill="none" stroke="black" d="M192.38,-47.98C232.68,-53.24 280.02,-59.41 316.6,-64.19"/>
++<polygon fill="black" stroke="black" points="316.25,-67.67 326.62,-65.49 317.15,-60.73 316.25,-67.67"/>
++<text text-anchor="middle" x="259.48" y="-63.8" font-family="Times,serif" font-size="14.00">orderId</text>
++</g>
++<!-- I3 -->
++<g id="node4" class="node">
++<title>I3</title>
++<polygon fill="lightyellow" stroke="black" points="450.48,-36 304.48,-36 304.48,0 450.48,0 450.48,-36"/>
++<text text-anchor="middle" x="377.48" y="-14.3" font-family="Times,serif" font-size="14.00">SendConfirmation</text>
++</g>
++<!-- E1&#45;&gt;I3 -->
++<g id="edge3" class="edge">
++<title>E1&#45;&gt;I3</title>
++<path fill="none" stroke="black" d="M203.87,-29.13C213.53,-28.39 223.2,-27.66 232.48,-27 252.47,-25.57 274.02,-24.16 294.21,-22.89"/>
++<polygon fill="black" stroke="black" points="294.55,-26.37 304.31,-22.26 294.12,-19.39 294.55,-26.37"/>
++<text text-anchor="middle" x="259.48" y="-30.8" font-family="Times,serif" font-size="14.00">orderId</text>
++</g>
++<!-- I2 -->
++<g id="node3" class="node">
++<title>I2</title>
++<polygon fill="lightyellow" stroke="black" points="687.48,-90 553.48,-90 553.48,-54 687.48,-54 687.48,-90"/>
++<text text-anchor="middle" x="620.48" y="-68.3" font-family="Times,serif" font-size="14.00">ProcessPayment</text>
++</g>
++<!-- I1&#45;&gt;I2 -->
++<g id="edge2" class="edge">
++<title>I1&#45;&gt;I2</title>
++<path fill="none" stroke="black" d="M428.12,-72C461.25,-72 505.45,-72 543.03,-72"/>
++<polygon fill="black" stroke="black" points="543.44,-75.5 553.44,-72 543.44,-68.5 543.44,-75.5"/>
++<text text-anchor="middle" x="501.98" y="-75.8" font-family="Times,serif" font-size="14.00">orderInfo</text>
++</g>
++</g>
++</svg>
+Index: baker-server/src/main/java/com/example/bakerserver/controller/RecipeController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/java/com/example/bakerserver/controller/RecipeController.java b/baker-server/src/main/java/com/example/bakerserver/controller/RecipeController.java
+new file mode 100644
+--- /dev/null	(date 1745090892000)
++++ b/baker-server/src/main/java/com/example/bakerserver/controller/RecipeController.java	(date 1745090892000)
+@@ -0,0 +1,16 @@
++package com.example.bakerserver.controller;
++
++import com.example.bakerserver.service.RecipeLoader;
++import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.RequestMapping;
++import org.springframework.web.bind.annotation.RestController;
++
++@RestController
++@RequestMapping("/baker")
++public class RecipeController {
++
++    @GetMapping("/recipe-id")
++    public String getRecipeId() {
++        return RecipeLoader.RECIPE_ID;
++    }
++}
+Index: baker-server/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/resources/application.yml b/baker-server/src/main/resources/application.yml
+new file mode 100644
+--- /dev/null	(date 1745089000000)
++++ b/baker-server/src/main/resources/application.yml	(date 1745089000000)
+@@ -0,0 +1,5 @@
++server:
++  port: 8080
++spring:
++  application:
++    name: baker-server
+Index: baker-server/src/main/java/com/example/bakerserver/service/RecipeLoader.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/java/com/example/bakerserver/service/RecipeLoader.java b/baker-server/src/main/java/com/example/bakerserver/service/RecipeLoader.java
+new file mode 100644
+--- /dev/null	(date 1745095736000)
++++ b/baker-server/src/main/java/com/example/bakerserver/service/RecipeLoader.java	(date 1745095736000)
+@@ -0,0 +1,33 @@
++package com.example.bakerserver.service;
++
++import com.ing.baker.recipe.javadsl.Recipe;
++import com.ing.baker.recipe.javadsl.RecipeCompiler;
++import com.ing.baker.runtime.common.RecipeRecord;
++import com.ing.baker.runtime.javadsl.Baker;
++import jakarta.annotation.PostConstruct;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Component;
++
++@Component
++public class RecipeLoader {
++
++    private static final Logger log = LoggerFactory.getLogger(RecipeLoader.class);
++    public static String RECIPE_ID;
++
++    @Autowired
++    private Baker baker;
++
++    @PostConstruct
++    public void loadRecipe() {
++        Recipe recipe = new Recipe("OrderProcessingRecipe")
++            .withSensoryEvent(com.example.shared.events.OrderReceivedEvent.class)
++            .withInteraction(com.example.bakerserver.interactions.VerifyOrder.class)
++            .withInteraction(com.example.bakerserver.interactions.ProcessPayment.class)
++            .withInteraction(com.example.bakerserver.interactions.SendConfirmation.class);
++
++        RECIPE_ID = baker.addRecipe(RecipeRecord.of(RecipeCompiler.compileRecipe(recipe)));
++        log.info("✅ Recipe registrata con ID: {}", RECIPE_ID);
++    }
++}
+Index: baker-server/src/main/java/com/example/bakerserver/controller/BakerRestController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/java/com/example/bakerserver/controller/BakerRestController.java b/baker-server/src/main/java/com/example/bakerserver/controller/BakerRestController.java
+new file mode 100644
+--- /dev/null	(date 1745090892000)
++++ b/baker-server/src/main/java/com/example/bakerserver/controller/BakerRestController.java	(date 1745090892000)
+@@ -0,0 +1,35 @@
++package com.example.bakerserver.controller;
++
++import com.example.shared.events.OrderReceivedEvent;
++import com.ing.baker.runtime.javadsl.Baker;
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.bind.annotation.*;
++
++import java.util.UUID;
++
++@RestController
++@RequestMapping("/baker")
++public class BakerRestController {
++
++    private static final Logger log = LoggerFactory.getLogger(BakerRestController.class);
++
++    @Autowired
++    private Baker baker;
++
++    @PostMapping("/trigger")
++    public ResponseEntity<String> triggerRecipe(@RequestBody OrderReceivedEvent event) {
++        String recipeInstanceId = UUID.randomUUID().toString();
++        try {
++            baker.bake(recipeInstanceId);
++            log.info("🍳 Istanza avviata: {}", recipeInstanceId);
++            baker.fireEvent(recipeInstanceId, event);
++            log.info("📩 Evento ricevuto per {}: {}", recipeInstanceId, event);
++            return ResponseEntity.ok("Recipe started with ID: " + recipeInstanceId);
++        } catch (Exception e) {
++            return ResponseEntity.internalServerError().body("Error: " + e.getMessage());
++        }
++    }
++}
+Index: baker-server/src/main/java/com/example/bakerserver/BakerServerApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/java/com/example/bakerserver/BakerServerApplication.java b/baker-server/src/main/java/com/example/bakerserver/BakerServerApplication.java
+new file mode 100644
+--- /dev/null	(date 1745088622000)
++++ b/baker-server/src/main/java/com/example/bakerserver/BakerServerApplication.java	(date 1745088622000)
+@@ -0,0 +1,11 @@
++package com.example.bakerserver;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class BakerServerApplication {
++    public static void main(String[] args) {
++        SpringApplication.run(BakerServerApplication.class, args);
++    }
++}
+Index: baker-server/start-server.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/start-server.sh b/baker-server/start-server.sh
+new file mode 100755
+--- /dev/null	(date 1745091060000)
++++ b/baker-server/start-server.sh	(date 1745091060000)
+@@ -0,0 +1,3 @@
++#!/bin/bash
++cd "/mnt/data/baker-multi-module/baker-server"
++mvn spring-boot:run
+Index: baker-server/Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/Dockerfile b/baker-server/Dockerfile
+new file mode 100644
+--- /dev/null	(date 1745095700000)
++++ b/baker-server/Dockerfile	(date 1745095700000)
+@@ -0,0 +1,4 @@
++FROM eclipse-temurin:17-jdk
++WORKDIR /app
++COPY target/*.jar app.jar
++ENTRYPOINT ["java", "-jar", "app.jar"]
+Index: baker-client/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-client/src/main/resources/application.yml b/baker-client/src/main/resources/application.yml
+new file mode 100644
+--- /dev/null	(date 1745089000000)
++++ b/baker-client/src/main/resources/application.yml	(date 1745089000000)
+@@ -0,0 +1,8 @@
++server:
++  port: 8084
++spring:
++  application:
++    name: baker-client
++baker:
++  host: http://localhost:8080
++  endpoint: /baker/trigger
+Index: baker-client/src/main/java/com/example/bakerclient/BakerClientApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-client/src/main/java/com/example/bakerclient/BakerClientApplication.java b/baker-client/src/main/java/com/example/bakerclient/BakerClientApplication.java
+new file mode 100644
+--- /dev/null	(date 1745087578000)
++++ b/baker-client/src/main/java/com/example/bakerclient/BakerClientApplication.java	(date 1745087578000)
+@@ -0,0 +1,36 @@
++package com.example.bakerclient;
++
++import com.example.shared.events.OrderReceivedEvent;
++import org.springframework.boot.CommandLineRunner;
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++import org.springframework.http.HttpEntity;
++import org.springframework.http.HttpHeaders;
++import org.springframework.http.MediaType;
++import org.springframework.web.client.RestTemplate;
++
++import java.util.UUID;
++
++@SpringBootApplication
++public class BakerClientApplication implements CommandLineRunner {
++
++    private final RestTemplate restTemplate = new RestTemplate();
++
++    public static void main(String[] args) {
++        SpringApplication.run(BakerClientApplication.class, args);
++    }
++
++    @Override
++    public void run(String... args) {
++        String recipeInstanceId = UUID.randomUUID().toString();
++        String bakerUrl = "http://localhost:8080/baker/instances/" + recipeInstanceId + "/events";
++
++        OrderReceivedEvent event = new OrderReceivedEvent("ORD-001", "Cliente Test");
++        HttpHeaders headers = new HttpHeaders();
++        headers.setContentType(MediaType.APPLICATION_JSON);
++        HttpEntity<OrderReceivedEvent> request = new HttpEntity<>(event, headers);
++
++        restTemplate.postForObject(bakerUrl, request, String.class);
++        System.out.println("Evento inviato a Baker con recipeId: " + recipeInstanceId);
++    }
++}
+Index: baker-client/start-client.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-client/start-client.sh b/baker-client/start-client.sh
+new file mode 100755
+--- /dev/null	(date 1745091060000)
++++ b/baker-client/start-client.sh	(date 1745091060000)
+@@ -0,0 +1,3 @@
++#!/bin/bash
++cd "/mnt/data/baker-multi-module/baker-client"
++mvn spring-boot:run
+Index: baker-client/Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-client/Dockerfile b/baker-client/Dockerfile
+new file mode 100644
+--- /dev/null	(date 1745095700000)
++++ b/baker-client/Dockerfile	(date 1745095700000)
+@@ -0,0 +1,4 @@
++FROM eclipse-temurin:17-jdk
++WORKDIR /app
++COPY target/*.jar app.jar
++ENTRYPOINT ["java", "-jar", "app.jar"]
+Index: run.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run.sh b/run.sh
+new file mode 100755
+--- /dev/null	(date 1745095628000)
++++ b/run.sh	(date 1745095628000)
+@@ -0,0 +1,12 @@
++#!/bin/bash
++echo "🚀 Avvio dei microservizi Baker..."
++
++# Porta ogni microservizio su un terminale diverso (background)
++./mvnw -pl baker-server spring-boot:run &
++sleep 5
++./mvnw -pl microservice-1 spring-boot:run &
++./mvnw -pl microservice-2 spring-boot:run &
++./mvnw -pl microservice-3 spring-boot:run &
++sleep 5
++./mvnw -pl baker-client spring-boot:run &
++wait
+Index: shared/src/main/java/com/example/shared/ingredients/OrderInfo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/shared/src/main/java/com/example/shared/ingredients/OrderInfo.java b/shared/src/main/java/com/example/shared/ingredients/OrderInfo.java
+new file mode 100644
+--- /dev/null	(date 1745088600000)
++++ b/shared/src/main/java/com/example/shared/ingredients/OrderInfo.java	(date 1745088600000)
+@@ -0,0 +1,19 @@
++package com.example.shared.ingredients;
++
++public class OrderInfo {
++    private String product;
++    private int quantity;
++
++    public OrderInfo() {}
++
++    public OrderInfo(String product, int quantity) {
++        this.product = product;
++        this.quantity = quantity;
++    }
++
++    public String getProduct() { return product; }
++    public void setProduct(String product) { this.product = product; }
++
++    public int getQuantity() { return quantity; }
++    public void setQuantity(int quantity) { this.quantity = quantity; }
++}
+Index: shared/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/shared/src/main/resources/application.yml b/shared/src/main/resources/application.yml
+new file mode 100644
+--- /dev/null	(date 1745094002000)
++++ b/shared/src/main/resources/application.yml	(date 1745094002000)
+@@ -0,0 +1,1 @@
++# shared module has no configuration
+\ No newline at end of file
+Index: baker-client.postman_collection.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-client.postman_collection.json b/baker-client.postman_collection.json
+new file mode 100644
+--- /dev/null	(date 1745095700000)
++++ b/baker-client.postman_collection.json	(date 1745095700000)
+@@ -0,0 +1,37 @@
++{
++  "info": {
++    "name": "Baker Trigger Collection",
++    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
++  },
++  "item": [
++    {
++      "name": "Trigger Recipe",
++      "request": {
++        "method": "POST",
++        "header": [
++          {
++            "key": "Content-Type",
++            "value": "application/json"
++          }
++        ],
++        "url": {
++          "raw": "http://localhost:8085/baker/trigger",
++          "protocol": "http",
++          "host": [
++            "localhost"
++          ],
++          "port": "8085",
++          "path": [
++            "baker",
++            "trigger"
++          ]
++        },
++        "body": {
++          "mode": "raw",
++          "raw": "{\n  \"orderId\": \"12345\",\n  \"customerName\": \"Mario Rossi\"\n}"
++        }
++      },
++      "response": []
++    }
++  ]
++}
+\ No newline at end of file
+Index: shared/src/main/java/com/example/shared/events/OrderReceivedEvent.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/shared/src/main/java/com/example/shared/events/OrderReceivedEvent.java b/shared/src/main/java/com/example/shared/events/OrderReceivedEvent.java
+new file mode 100644
+--- /dev/null	(date 1745095550000)
++++ b/shared/src/main/java/com/example/shared/events/OrderReceivedEvent.java	(date 1745095550000)
+@@ -0,0 +1,29 @@
++package com.example.shared.events;
++
++public class OrderReceivedEvent {
++    private String orderId;
++    private String customerName;
++
++    public OrderReceivedEvent() {}
++
++    public OrderReceivedEvent(String orderId, String customerName) {
++        this.orderId = orderId;
++        this.customerName = customerName;
++    }
++
++    public String getOrderId() {
++        return orderId;
++    }
++
++    public void setOrderId(String orderId) {
++        this.orderId = orderId;
++    }
++
++    public String getCustomerName() {
++        return customerName;
++    }
++
++    public void setCustomerName(String customerName) {
++        this.customerName = customerName;
++    }
++}
+Index: baker-server/src/main/java/com/example/bakerserver/interactions/SendConfirmation.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/java/com/example/bakerserver/interactions/SendConfirmation.java b/baker-server/src/main/java/com/example/bakerserver/interactions/SendConfirmation.java
+new file mode 100644
+--- /dev/null	(date 1745095560000)
++++ b/baker-server/src/main/java/com/example/bakerserver/interactions/SendConfirmation.java	(date 1745095560000)
+@@ -0,0 +1,7 @@
++package com.example.bakerserver.interactions;
++
++public class SendConfirmation {
++    public void apply(String orderId) {
++        System.out.println("Confirmation sent for: " + orderId);
++    }
++}
+Index: baker-server/src/main/java/com/example/bakerserver/interactions/ProcessPayment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/java/com/example/bakerserver/interactions/ProcessPayment.java b/baker-server/src/main/java/com/example/bakerserver/interactions/ProcessPayment.java
+new file mode 100644
+--- /dev/null	(date 1745095560000)
++++ b/baker-server/src/main/java/com/example/bakerserver/interactions/ProcessPayment.java	(date 1745095560000)
+@@ -0,0 +1,7 @@
++package com.example.bakerserver.interactions;
++
++public class ProcessPayment {
++    public String apply(String orderInfo) {
++        return "PaymentDoneFor:" + orderInfo;
++    }
++}
+Index: baker-server/src/main/java/com/example/bakerserver/interactions/VerifyOrder.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/baker-server/src/main/java/com/example/bakerserver/interactions/VerifyOrder.java b/baker-server/src/main/java/com/example/bakerserver/interactions/VerifyOrder.java
+new file mode 100644
+--- /dev/null	(date 1745095560000)
++++ b/baker-server/src/main/java/com/example/bakerserver/interactions/VerifyOrder.java	(date 1745095560000)
+@@ -0,0 +1,7 @@
++package com.example.bakerserver.interactions;
++
++public class VerifyOrder {
++    public String apply(String orderId) {
++        return "OrderVerified:" + orderId;
++    }
++}
+Index: .mvn/wrapper/maven-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/.mvn/wrapper/maven-wrapper.properties b/.mvn/wrapper/maven-wrapper.properties
+new file mode 100644
+--- /dev/null	(date 1745093730000)
++++ b/.mvn/wrapper/maven-wrapper.properties	(date 1745093730000)
+@@ -0,0 +1,1 @@
++distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.8.6/apache-maven-3.8.6-bin.zip
+\ No newline at end of file
+diff --git a/test.http b/test.http
+new file mode 100644

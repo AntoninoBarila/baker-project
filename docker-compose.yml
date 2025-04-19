@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  baker-server:
+    build: ./baker-server
+    ports:
+      - "8080:8080"
+  baker-client:
+    build: ./baker-client
+    ports:
+      - "8085:8085"
+  microservice-1:
+    build: ./microservice-1
+    ports:
+      - "8091:8091"
+  microservice-2:
+    build: ./microservice-2
+    ports:
+      - "8092:8092"
+  microservice-3:
+    build: ./microservice-3
+    ports:
+      - "8093:8093"

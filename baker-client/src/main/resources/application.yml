@@ -1,0 +1,8 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: baker-client
+baker:
+  host: http://localhost:8080
+  endpoint: /baker/trigger
